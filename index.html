@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- TOP LEVEL NAVBAR -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-primary nav-top">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">M4Admin</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Website</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Logout</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- COLLAPSING SIDEBAR WITH MENU -->
+    <div id="sidebar" class="slideInLeft">
+        <nav class="nav flex-column">
+            <a class="nav-link active" href="#">
+                <i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard
+            </a>
+            <a class="nav-link" href="#">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i> Forms
+            </a>
+            <a class="nav-link" href="#">
+                <i class="fa fa-flag-o" aria-hidden="true"></i> UI Elements
+            </a>
+            <a class="nav-link" href="#">
+                <i class="fa fa-table" aria-hidden="true"></i> Tables
+            </a>
+            <a class="nav-link" href="#">
+                <i class="fa fa-bar-chart" aria-hidden="true"></i> Data Presentation
+            </a>
+            <a class="nav-link" href="#">
+                <i class="fa fa-clone" aria-hidden="true"></i> Additional Pages
+            </a>
+
+        </nav>
+    </div>
+
+
+    <!-- PAGE CONTENT AREA -->
+    <div id="content">
+        <i class="fa fa-bars fa-2x" id="nav-toggle" aria-hidden="true"></i>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active">Dashboard</li>
+        </ol>
+
+        <div class="container">
+
+            <!-- Top Statistics -->
+            <div id="dashboard-top-statistics">
+                <div class="row justify-content-around">
+                    <div class="col-6 col-md-4 col-lg-3 dashboard-statistic-box">
+                        <h4 class="title">Users</h4>
+                        <i class="fa fa-users fa-5x" aria-hidden="true"></i>
+                        <hr>
+                        <h4 class="display-4 value">125</h4>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 dashboard-statistic-box">
+                        <h4 class="title">Pages</h4>
+                        <i class="fa fa-file fa-5x" aria-hidden="true"></i>
+                        <hr>
+                        <h4 class="display-4 value">125</h4>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 dashboard-statistic-box">
+                        <h4 class="title">Posts</h4>
+                        <i class="fa fa-rss fa-5x" aria-hidden="true"></i>
+                        <hr>
+                        <h4 class="display-4 value">125</h4>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 dashboard-statistic-box">
+                        <h4 class="title">Comments</h4>
+                        <i class="fa fa-comments fa-5x" aria-hidden="true"></i>
+                        <hr>
+                        <h4 class="display-4 value">125</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Charts -->
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <canvas id="visitorsChart" width="200" height="200"></canvas>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <canvas id="freeSpaceChart" width="100" height="100"></canvas>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <canvas id="tasksFinishedChart" width="100" height="100"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/chart.js/dist/Chart.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

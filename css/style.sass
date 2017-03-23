@@ -1,0 +1,97 @@
+@import "bourbon/bourbon"; 
+
+$width-sidebar: 250px
+
+$color-primary: #039BE5
+$color-primary-dark: #353c40
+$color-primary-light: #B3E5FC
+$color-accent: #FFEB3B
+
+$color-text-primary: #323232
+$color-text-secondary: #757575
+$color-text-reverse: #FFFFFF
+
+html, body
+    height: 100%
+    box-sizing: border-box
+    
+.bg-primary
+    background-color: $color-primary !important;
+    
+.navbar,
+    z-index: 2
+
+.nav-top .navbar-nav .nav-link
+    color: $color-text-reverse
+    &:hover
+       color: $color-primary-dark
+    
+.hidden
+    display: none !important;
+     
+#sidebar
+    background-color: $color-text-primary
+    width: $width-sidebar
+    margin-top: 54px
+    top: 0px
+    left: 0px
+    bottom: 0px
+    position: fixed
+    z-index: 1
+    display: block
+
+    nav > .nav-link
+        width: $width-sidebar
+        display: inline-block
+        color: #fff
+        
+        &:hover
+            color: $color-primary
+    
+#content
+    padding-left: $width-sidebar
+    transition: all 1s ease
+    padding-top: 56px
+
+.full-width
+    padding-left: 0 !important;
+    transition: all 1s ease
+        
+
+#nav-toggle
+    transition: all 1s ease
+    margin: 10px
+    position: absolute
+    
+#nav-toggle.active
+    @include transform(rotate(90deg))
+    transition: all 1s ease
+    
+.breadcrumb
+    padding-left: 60px
+  
+#dashboard-top-statistics 
+    color: $color-text-primary
+    margin: 0, -15px, -15px, -15px
+    h4.title
+        background-color: $color-primary
+        color: $color-text-reverse
+        padding: 10px 0
+    hr
+        border: 2px solid $color-primary
+    .value
+        color: $color-text-secondary
+    
+#dashboard-top-statistics i
+    color: $color-primary
+    
+.dashboard-statistic-box
+    border: 4px solid $color-primary
+    padding: 0;
+    max-width: 240px;
+    min-width: 140px;
+    text-align: center;
+    margin: 15px
+    box-sizing: border-box;
+
+
