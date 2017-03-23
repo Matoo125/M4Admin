@@ -37,6 +37,15 @@ $(function () {
             showOnWideScreen()
         }
     });
+    
+    // jquery.Nicescroll    
+    $("#live-chat").niceScroll()
+    $("html").niceScroll({
+        cursorwidth: "8px",
+        cursorcolor: "#353c40",
+        cursorborder: "1px solid #039BE5",
+        zindex: 3
+    })
 
     // CHART.JS
     

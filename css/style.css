@@ -102,4 +102,8 @@ html, body {
   margin: 15px;
   box-sizing: border-box; }
 
+/* line 97, C:/laragon/www/M4Admin/css/style.sass */
+#live-chat {
+  height: 400px; }
+
 /*# sourceMappingURL=style.css.map */
