@@ -1,28 +1,31 @@
-/* line 14, C:/laragon/www/M4Admin/css/style.sass */
+/* Global */
+/* line 19, C:/laragon/www/M4Admin/css/style.sass */
 html, body {
   height: 100%;
   box-sizing: border-box; }
 
-/* line 18, C:/laragon/www/M4Admin/css/style.sass */
+/* line 23, C:/laragon/www/M4Admin/css/style.sass */
+.card {
+  margin-bottom: 25px; }
+
+/* line 26, C:/laragon/www/M4Admin/css/style.sass */
 .bg-primary {
   background-color: #039BE5 !important; }
 
-/* line 21, C:/laragon/www/M4Admin/css/style.sass */
+/* Navbar */
+/* line 30, C:/laragon/www/M4Admin/css/style.sass */
 .navbar {
   z-index: 2; }
 
-/* line 24, C:/laragon/www/M4Admin/css/style.sass */
+/* line 33, C:/laragon/www/M4Admin/css/style.sass */
 .nav-top .navbar-nav .nav-link {
   color: #FFFFFF; }
-  /* line 26, C:/laragon/www/M4Admin/css/style.sass */
+  /* line 35, C:/laragon/www/M4Admin/css/style.sass */
   .nav-top .navbar-nav .nav-link:hover {
     color: #353c40; }
 
-/* line 29, C:/laragon/www/M4Admin/css/style.sass */
-.hidden {
-  display: none !important; }
-
-/* line 32, C:/laragon/www/M4Admin/css/style.sass */
+/* Sidebar */
+/* line 40, C:/laragon/www/M4Admin/css/style.sass */
 #sidebar {
   background-color: #323232;
   width: 250px;
@@ -33,77 +36,62 @@ html, body {
   position: fixed;
   z-index: 1;
   display: block; }
-  /* line 43, C:/laragon/www/M4Admin/css/style.sass */
+  /* line 51, C:/laragon/www/M4Admin/css/style.sass */
   #sidebar nav > .nav-link {
     width: 250px;
     display: inline-block;
     color: #fff; }
-    /* line 48, C:/laragon/www/M4Admin/css/style.sass */
+    /* line 56, C:/laragon/www/M4Admin/css/style.sass */
     #sidebar nav > .nav-link:hover {
       color: #039BE5; }
 
-/* line 51, C:/laragon/www/M4Admin/css/style.sass */
+/* Content Area */
+/* line 60, C:/laragon/www/M4Admin/css/style.sass */
 #content {
   padding-left: 250px;
   transition: all 1s ease;
-  padding-top: 56px; }
+  padding-top: 56px;
+  background-color: #dadada; }
 
-/* line 56, C:/laragon/www/M4Admin/css/style.sass */
+/* line 66, C:/laragon/www/M4Admin/css/style.sass */
 .full-width {
   padding-left: 0 !important;
   transition: all 1s ease; }
 
-/* line 61, C:/laragon/www/M4Admin/css/style.sass */
+/* line 70, C:/laragon/www/M4Admin/css/style.sass */
 #nav-toggle {
   transition: all 1s ease;
   margin: 10px;
   position: absolute; }
+  /* line 74, C:/laragon/www/M4Admin/css/style.sass */
+  #nav-toggle.active {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition: all 1s ease; }
 
-/* line 66, C:/laragon/www/M4Admin/css/style.sass */
-#nav-toggle.active {
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-  transition: all 1s ease; }
-
-/* line 70, C:/laragon/www/M4Admin/css/style.sass */
+/* line 78, C:/laragon/www/M4Admin/css/style.sass */
 .breadcrumb {
-  padding-left: 60px; }
+  padding-left: 60px;
+  background-color: #f7f7f9; }
 
-/* line 73, C:/laragon/www/M4Admin/css/style.sass */
-#dashboard-top-statistics {
-  color: #323232;
-  margin: 0, -15px, -15px, -15px; }
-  /* line 76, C:/laragon/www/M4Admin/css/style.sass */
-  #dashboard-top-statistics h4.title {
-    background-color: #039BE5;
-    color: #FFFFFF;
-    padding: 10px 0; }
-  /* line 80, C:/laragon/www/M4Admin/css/style.sass */
-  #dashboard-top-statistics hr {
-    border: 2px solid #039BE5; }
-  /* line 82, C:/laragon/www/M4Admin/css/style.sass */
-  #dashboard-top-statistics .value {
+/* Dashboard Statistics */
+/* line 83, C:/laragon/www/M4Admin/css/style.sass */
+#dashboard-statistics {
+  color: #323232; }
+  /* line 85, C:/laragon/www/M4Admin/css/style.sass */
+  #dashboard-statistics .value {
     color: #757575; }
 
-/* line 85, C:/laragon/www/M4Admin/css/style.sass */
-#dashboard-top-statistics i {
-  color: #039BE5; }
+/* Chat Area */
+/* line 89, C:/laragon/www/M4Admin/css/style.sass */
+#live-chat-body {
+  height: 400px;
+  overflow-x: hidden;
+  outline: none; }
 
-/* line 88, C:/laragon/www/M4Admin/css/style.sass */
-.dashboard-statistic-box {
-  border: 4px solid #039BE5;
-  padding: 0;
-  max-width: 240px;
-  min-width: 140px;
-  text-align: center;
-  margin: 15px;
-  box-sizing: border-box; }
-
-/* line 97, C:/laragon/www/M4Admin/css/style.sass */
-#live-chat {
-  height: 400px; }
+/* Task List */
 
 /*# sourceMappingURL=style.css.map */

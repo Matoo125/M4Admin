@@ -4,4 +4,5 @@
 - jQuery
 - Animate.css
 - Chart.js
+- Sortable
 - Trumbowyg

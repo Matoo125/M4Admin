@@ -7,7 +7,7 @@ $(function () {
     })
 
     let sidebarAnimation = function () {
-        $("#sidebar").removeClass("animated hidden")
+        $("#sidebar").removeClass("animated")
             .addClass("animated")
             .toggleClass("slideOutLeft slideInLeft")
         $("#content").toggleClass("full-width")
@@ -38,12 +38,16 @@ $(function () {
         }
     });
     
+    // sortable
+    Sortable.create(tasks, {})
+    
     // jquery.Nicescroll    
-    $("#live-chat").niceScroll()
+    $("#live-chat-body").niceScroll({horizrailenabled:false})
+
     $("html").niceScroll({
-        cursorwidth: "8px",
+        cursorwidth: "5px",
         cursorcolor: "#353c40",
-        cursorborder: "1px solid #039BE5",
+        cursorborder: "none",
         zindex: 3
     })
 
@@ -83,12 +87,6 @@ $(function () {
         type: 'bar',
         data: data,
         options: {
-            title: {
-                display: true,
-                text: "Page Visitors",
-                fontSize: 25,
-                padding: 25
-            },
             legend: {
                 display: false
             },
@@ -123,12 +121,6 @@ $(function () {
         type: 'doughnut',
         data: data,
         options: {
-            title: {
-                display: true,
-                text: "Free Space", 
-                fontSize: 25,
-                padding: 25
-            },
              legend: {
                 display: false
             },
@@ -175,13 +167,7 @@ $(function () {
     var freeSpaceChart = new Chart(cnx, {
         type: 'line',
         data: data,
-        options: {
-            title: {
-                display: true,
-                text: "Tasks Finished", 
-                fontSize: 25,
-                padding: 25
-            },           
+        options: {          
             legend: {
                 display: false
             },

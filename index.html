@@ -75,81 +75,164 @@
         <div class="container">
 
             <!-- Top Statistics -->
-            <div id="dashboard-top-statistics">
-                <div class="row justify-content-around">
-                    <div class="col-6 col-md-4 col-lg-3 dashboard-statistic-box">
-                        <h4 class="title">Users</h4>
-                        <i class="fa fa-users fa-5x" aria-hidden="true"></i>
-                        <hr>
-                        <h4 class="display-4 value">125</h4>
+            <div id="dashboard-statistics">
+                <div class="row">
+                    <div class="col-6 col-md-4 col-lg-3 ">
+                        <div class="card">
+                            <div class="card-header">
+                                Users
+                            </div>
+                            <div class="card-block text-center">
+                                <i class="fa fa-users fa-5x" aria-hidden="true"></i>
+                            </div>
+                            <div class="card-footer">
+                                <h4 class=" value">125</h4>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-6 col-md-4 col-lg-3 dashboard-statistic-box">
-                        <h4 class="title">Pages</h4>
-                        <i class="fa fa-file fa-5x" aria-hidden="true"></i>
-                        <hr>
-                        <h4 class="display-4 value">125</h4>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="card-header">
+                                Pages
+                            </div>
+                            <div class="card-block text-center">
+                                <i class="fa fa-file fa-5x" aria-hidden="true"></i>
+                            </div>
+                            <div class="card-footer">
+                                <h4 class="value">125</h4>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-6 col-md-4 col-lg-3 dashboard-statistic-box">
-                        <h4 class="title">Posts</h4>
-                        <i class="fa fa-rss fa-5x" aria-hidden="true"></i>
-                        <hr>
-                        <h4 class="display-4 value">125</h4>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <div class="card-header">
+                                Posts
+                            </div>
+                            <div class="card-block text-center">
+                                <i class="fa fa-rss fa-5x" aria-hidden="true"></i>
+                            </div>
+                            <div class="card-footer">
+                                <h4 class="value">125</h4>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-6 col-md-4 col-lg-3 dashboard-statistic-box">
-                        <h4 class="title">Comments</h4>
-                        <i class="fa fa-comments fa-5x" aria-hidden="true"></i>
-                        <hr>
-                        <h4 class="display-4 value">125</h4>
+                    <div class="col-6 col-md-4 col-lg-3">
+
+                        <div class="card">
+                            <div class="card-header">
+                                Comments
+                            </div>
+                            <div class="card-block text-center">
+                                <i class="fa fa-comments fa-5x" aria-hidden="true"></i>
+                            </div>
+                            <div class="card-footer">
+                                <h4 class="value">125</h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Charts -->
-            <div class="row">
+            <div class="row" id="charts">
                 <div class="col-12 col-md-6 col-lg-4">
-                    <canvas id="visitorsChart" width="200" height="200"></canvas>
+                    <div class="card">
+                        <div class="card-header">Visitors</div>
+                        <div class="card-block">
+                            <canvas class="chart" id="visitorsChart" width="200" height="200"></canvas>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <canvas id="freeSpaceChart" width="100" height="100"></canvas>
+                    <div class="card">
+                        <div class="card-header">Free Space</div>
+                        <div class="card-block">
+                            <canvas class="chart" id="freeSpaceChart" width="100" height="100"></canvas>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
-                    <canvas id="tasksFinishedChart" width="100" height="100"></canvas>
+                    <div class="card">
+                        <div class="card-header">Tasks Finished</div>
+                        <div class="card-block">
+                            <canvas class="chart" id="tasksFinishedChart" width="100" height="100"></canvas>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" id="dashboard-third-row">
                 <!-- Chat -->
                 <div class="col-md-6">
-                    <div id="live-chat">
-                        <h2 class="display-2">Live Chat</h2>
-                        <div class="chat-entry-wrapper">
-                            <div class="author">Matej</div>
-                            <div class="chat-entry">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur molestiae, molestias, cumque modi aspernatur beatae ea, iste pariatur odit eaque praesentium illo, est voluptates aperiam excepturi. Commodi expedita accusamus dignissimos?</div>
-                        </div>
-                        <div class="chat-entry-wrapper">
-                            <div class="author">Matej</div>
-                            <div class="chat-entry">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur molestiae, molestias, cumque modi aspernatur beatae ea, iste pariatur odit eaque praesentium illo, est voluptates aperiam excepturi. Commodi expedita accusamus dignissimos?</div>
-                        </div>
-                        <div class="chat-entry-wrapper">
-                            <div class="author">Matej</div>
-                            <div class="chat-entry">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur molestiae, molestias, cumque modi aspernatur beatae ea, iste pariatur odit eaque praesentium illo, est voluptates aperiam excepturi. Commodi expedita accusamus dignissimos?</div>
-                        </div>
-                        <div class="chat-entry-wrapper">
-                            <div class="author">Matej</div>
-                            <div class="chat-entry">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur molestiae, molestias, cumque modi aspernatur beatae ea, iste pariatur odit eaque praesentium illo, est voluptates aperiam excepturi. Commodi expedita accusamus dignissimos?</div>
-                        </div>
-                        <div class="chat-entry-wrapper">
-                            <div class="author">Matej</div>
-                            <div class="chat-entry">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur molestiae, molestias, cumque modi aspernatur beatae ea, iste pariatur odit eaque praesentium illo, est voluptates aperiam excepturi. Commodi expedita accusamus dignissimos?</div>
-                        </div>
-                        <div class="chat-entry-wrapper">
-                            <div class="author">Matej</div>
-                            <div class="chat-entry">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur molestiae, molestias, cumque modi aspernatur beatae ea, iste pariatur odit eaque praesentium illo, est voluptates aperiam excepturi. Commodi expedita accusamus dignissimos?</div>
-                        </div>
+                    <div class="card">
+                        <div class="card-header">Live Chat</div>
+                        <div class="card-block" id="live-chat-body">
 
+                            <div class="row" id="message-wrapper">
+                                <div class="col-3">
+                                    <img class="img-fluid" src="http://placehold.it/150x150">
+                                </div>
+                                <div class="col-8">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos culpa, eos quis facere dolor maxime, nesciunt, quod asperiores repellendus impedit aut, aliquam commodi! Vel laudantium ducimus debitis veniam, sapiente nam!</p>
+                                    <p class="text-muted">Matej Vrzala <span class="float-right">13.2 14:21</span></p>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row" id="message-wrapper">
+                                <div class="col-3">
+                                    <img class="img-fluid" src="http://placehold.it/150x150">
+                                </div>
+                                <div class="col-8">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos culpa, eos quis facere dolor maxime, nesciunt, quod asperiores repellendus impedit aut, aliquam commodi! Vel laudantium ducimus debitis veniam, sapiente nam!</p>
+                                    <p class="text-muted">Matej Vrzala <span class="float-right">13.2 14:21</span></p>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row" id="message-wrapper">
+                                <div class="col-3">
+                                    <img class="img-fluid" src="http://placehold.it/150x150">
+                                </div>
+                                <div class="col-8">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos culpa, eos quis facere dolor maxime, nesciunt, quod asperiores repellendus impedit aut, aliquam commodi! Vel laudantium ducimus debitis veniam, sapiente nam!</p>
+                                    <p class="text-muted">Matej Vrzala <span class="float-right">13.2 14:21</span></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Write message ...">
+                                <span class="input-group-btn">
+                                    <button class="btn" type="button">Send</button>
+                                </span>
+                            </div>
+
+                        </div>
                     </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">Tasks</div>
+                        <div class="card-block">
+                            <ul class="list-group" id="tasks">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Morbi leo risus</li>
+                                <li class="list-group-item">Porta ac consectetur ac</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-secondary">Add</button>
+                        </div>
+                    </div>
+
                 </div>
 
 
@@ -168,6 +251,7 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/chart.js/dist/Chart.bundle.min.js"></script>
     <script src="bower_components/jquery.nicescroll/dist/jquery.nicescroll.min.js"></script>
+    <script src="bower_components/Sortable/Sortable.min.js"></script>
 
     <script src="js/script.js"></script>
 </body>
