@@ -1,62 +1,68 @@
+/*jslint sloppy: true*/
+/*global $ */
+
 $(function () {
 
     // SIDEBAR
-
-    $("#nav-toggle").click(function () {
-        sidebarAnimation()
-    })
-
-    let sidebarAnimation = function () {
+    var sidebarAnimation = function () {
         $("#sidebar").removeClass("animated")
             .addClass("animated")
-            .toggleClass("slideOutLeft slideInLeft")
-        $("#content").toggleClass("full-width")
-        $("#nav-toggle").toggleClass("active")
-    }
+            .toggleClass("slideOutLeft slideInLeft");
+        $("#content").toggleClass("full-width");
+        $("#nav-toggle").toggleClass("active");
+    };
 
-    let hideOnSmallScreen = function () {
+    $("#nav-toggle").click(function () {
+        sidebarAnimation();
+    });
+
+
+
+    var hideOnSmallScreen = function () {
         if ($("#sidebar").hasClass("slideInLeft")) {
-            sidebarAnimation()
+            sidebarAnimation();
         }
-    }
+    };
 
-    let showOnWideScreen = function () {
+    var showOnWideScreen = function () {
         if ($("#sidebar").hasClass("slideOutLeft")) {
-            sidebarAnimation()
+            sidebarAnimation();
         }
-    }
+    };
 
     if ($(window).width() <= 992) {
-        sidebarAnimation()
+        sidebarAnimation();
     }
 
     $(window).on('resize', function () {
         if ($(window).width() <= 992) {
-            hideOnSmallScreen()
+            hideOnSmallScreen();
         } else {
-            showOnWideScreen()
+            showOnWideScreen();
         }
     });
-    
+
     // sortable
-    Sortable.create(tasks, {})
-    
+    Sortable.create(tasks, {});
+
     // jquery.Nicescroll    
-    $("#live-chat-body").niceScroll({horizrailenabled:false})
+    $("#live-chat-body").niceScroll({
+        horizrailenabled: false
+    });
 
     $("html").niceScroll({
         cursorwidth: "5px",
         cursorcolor: "#353c40",
         cursorborder: "none",
         zindex: 3
-    })
+    });
 
     // CHART.JS
-    
+
     /*
      -- VISITORS CHART --     
     */
-    var cnx = $("#visitorsChart")
+    var cnx = $("#visitorsChart");
     var data = {
         labels: ["Monday", "Thuesday", "Wednesday", "Thursday", "Friday", "Sunday"],
         datasets: [
@@ -91,13 +97,13 @@ $(function () {
                 display: false
             },
         }
-    })
-    
+    });
+
     /*
     -- FREE SPACE CHART --
     */
-    
-    var cnx = $("#freeSpaceChart")
+
+    var cnx = $("#freeSpaceChart");
     var data = {
         labels: [
             "Used",
@@ -116,25 +122,25 @@ $(function () {
                 ]
             }]
     };
-    
+
     var freeSpaceChart = new Chart(cnx, {
         type: 'doughnut',
         data: data,
         options: {
-             legend: {
+            legend: {
                 display: false
             },
         }
-        
-    })
-    
-    
+
+    });
+
+
     /*
     -- TASKS FINISHED CHART --
     */
-    
-    var cnx = $("#tasksFinishedChart")
-    
+
+    var cnx = $("#tasksFinishedChart");
+
     var data = {
         labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September"],
         datasets: [
@@ -163,15 +169,15 @@ $(function () {
         ]
     };
 
-    
+
     var freeSpaceChart = new Chart(cnx, {
         type: 'line',
         data: data,
-        options: {          
+        options: {
             legend: {
                 display: false
             },
         }
-        
-    })
+
+    });
 })

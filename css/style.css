@@ -62,7 +62,7 @@ html, body {
 #nav-toggle {
   transition: all 1s ease;
   margin: 10px;
-  position: absolute; }
+  position: fixed; }
   /* line 74, C:/laragon/www/M4Admin/css/style.sass */
   #nav-toggle.active {
     -webkit-transform: rotate(90deg);
@@ -89,8 +89,7 @@ html, body {
 /* line 89, C:/laragon/www/M4Admin/css/style.sass */
 #live-chat-body {
   height: 400px;
-  overflow-x: hidden;
-  outline: none; }
+  overflow-x: hidden; }
 
 /* Task List */
 
