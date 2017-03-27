@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="bower_components/trumbowyg/dist/ui/trumbowyg.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- TOP LEVEL NAVBAR -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-primary nav-top">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">M4Admin</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Website</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Logout</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- COLLAPSING SIDEBAR WITH MENU -->
+    <div id="sidebar" class="slideInLeft">
+        <nav class="nav flex-column">
+            <a class="nav-link active" href="index.html">
+                <i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard
+            </a>
+            <a class="nav-link" href="forms.html">
+                <i class="fa fa-check-square-o" aria-hidden="true"></i> Forms
+            </a>
+            <a class="nav-link" href="ui-elements.html">
+                <i class="fa fa-flag-o" aria-hidden="true"></i> UI Elements
+            </a>
+            <a class="nav-link" href="tables.html">
+                <i class="fa fa-table" aria-hidden="true"></i> Tables
+            </a>
+            <a class="nav-link" href="data-presentation.html">
+                <i class="fa fa-bar-chart" aria-hidden="true"></i> Data Presentation
+            </a>
+            <a class="nav-link" href="additional-pages.html">
+                <i class="fa fa-clone" aria-hidden="true"></i> Additional Pages
+            </a>
+
+        </nav>
+    </div>
+
+
+    <!-- PAGE CONTENT AREA -->
+    <div id="content">
+        <i class="fa fa-bars fa-2x" id="nav-toggle" aria-hidden="true"></i>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active">Forms</li>
+        </ol>
+
+        <div class="container">
+
+            <!-- ADD Article form -->
+            <div class="new-article-form">
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header">Add New Article</div>
+                            <div class="card-block">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="inputTitle">Title</label>
+                                        <input type="email" class="form-control" id="inputTitle" placeholder="Title">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="textareaArticleBody">Content</label>
+                                        <textarea class="form-control" id="textareaArticleBody"></textarea>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="form-group">
+                                                <label class="custom-file">
+                                                <input type="file" class="custom-file-input" id="exampleInputFile" aria-describedby="fileHelp">
+                                                <span class="custom-file-control form-control-file "></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                             <div class="form-check">
+                                                <label class="form-check-label">
+                                                  <input type="checkbox" class="form-check-input">
+                                                  Publish
+                                                </label>
+                                              </div>
+                                        </div>
+                                    </div>
+
+                                 
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/chart.js/dist/Chart.bundle.min.js"></script>
+    <script src="bower_components/jquery.nicescroll/dist/jquery.nicescroll.min.js"></script>
+    <script src="bower_components/Sortable/Sortable.min.js"></script>
+    <script src="bower_components/trumbowyg/dist/trumbowyg.min.js"></script>
+
+    <script src="js/script.js"></script>
+    
+    <script>
+    $('#textareaArticleBody').trumbowyg({
+    autogrow: true
+});
+        
+        
+    </script>
+</body>
+
+</html>
