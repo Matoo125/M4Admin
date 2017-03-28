@@ -3,9 +3,13 @@
 $width-sidebar: 250px
 
 $color-primary: #039BE5
-$color-primary-dark: #353c40
+$color-primary-dark: #1186c9
 $color-primary-light: #B3E5FC
 $color-accent: #FFEB3B
+
+$color-sucess: #00c853
+$color-warning: #ffff00
+$color-error: #ff3d00
 
 $color-bg: #dadada
 $color-bg-primary: #fff
@@ -26,6 +30,16 @@ html, body
 .bg-primary
     background-color: $color-primary !important;
     
+/* BUTTONS */
+.btn-primary
+    background-color: $color-primary
+    border-color: $color-primary
+    &:hover,
+    &:focus
+        background-color: $color-primary-dark
+        border-color: $color-primary-dark        
+    
+    
 /* Navbar */
 .navbar,
     z-index: 2
@@ -33,7 +47,7 @@ html, body
 .nav-top .navbar-nav .nav-link
     color: $color-text-reverse
     &:hover
-       color: $color-primary-dark
+       color: $color-text-primary
     
      
 /* Sidebar */
