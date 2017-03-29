@@ -1,41 +1,178 @@
 /* Global */
-/* line 23, C:/laragon/www/M4Admin/css/style.sass */
 html, body {
   height: 100%;
   box-sizing: border-box; }
 
-/* line 27, C:/laragon/www/M4Admin/css/style.sass */
 .card {
   margin-bottom: 25px; }
 
-/* line 30, C:/laragon/www/M4Admin/css/style.sass */
 .bg-primary {
   background-color: #039BE5 !important; }
 
+.bg-success {
+  background-color: #3ab921 !important; }
+
+.bg-info {
+  background-color: #2db2ed !important; }
+
+.bg-warning {
+  background-color: #f28507 !important; }
+
+.bg-danger {
+  background-color: #ea4916 !important; }
+
 /* BUTTONS */
-/* line 34, C:/laragon/www/M4Admin/css/style.sass */
 .btn-primary {
   background-color: #039BE5;
-  border-color: #039BE5; }
-  /* line 37, C:/laragon/www/M4Admin/css/style.sass */
+  border-color: #1186c9; }
   .btn-primary:hover, .btn-primary:focus {
     background-color: #1186c9;
     border-color: #1186c9; }
 
+.btn-outline-primary {
+  border-color: #039BE5; }
+  .btn-outline-primary:hover, .btn-outline-primary:focus {
+    background-color: #1186c9;
+    border-color: #1186c9; }
+
+.btn-success {
+  background-color: #3ab921;
+  border-color: #0ba523; }
+  .btn-success:hover, .btn-success:focus {
+    background-color: #0ba523;
+    border-color: #3ab921; }
+
+.btn-outline-success {
+  border-color: #3ab921; }
+  .btn-outline-success:hover, .btn-outline-success:focus {
+    background-color: #3ab921;
+    border-color: #3ab921; }
+
+.btn-warning {
+  background-color: #f28507;
+  border-color: #c66e08; }
+  .btn-warning:hover, .btn-warning:focus {
+    background-color: #c66e08;
+    border-color: #f28507; }
+
+.btn-outline-warning {
+  border-color: #f28507; }
+  .btn-outline-warning:hover, .btn-outline-warning:focus {
+    background-color: #f28507;
+    border-color: #f28507; }
+
+.btn-danger {
+  background-color: #ea4916;
+  border-color: #c1390e; }
+  .btn-danger:hover, .btn-danger:focus {
+    background-color: #c1390e;
+    border-color: #ea4916; }
+
+.btn-outline-danger {
+  border-color: #c1390e; }
+  .btn-outline-danger:hover, .btn-outline-danger:focus {
+    background-color: #ea4916;
+    border-color: #ea4916; }
+
+.btn-info {
+  background-color: #2db2ed; }
+  .btn-info:hover, .btn-info:focus {
+    background-color: #138dc3;
+    border-color: #2db2ed; }
+
+.btn-outline-info {
+  border-color: #138dc3; }
+  .btn-outline-info:hover, .btn-outline-info:focus {
+    background-color: #2db2ed;
+    border-color: #2db2ed; }
+
+.btn-secondary {
+  background-color: #757575;
+  color: #FFFFFF; }
+  .btn-secondary:hover, .btn-secondary:focus {
+    background-color: #323232;
+    color: #FFFFFF; }
+
+.btn-outline-secondary {
+  border-color: #757575;
+  color: #757575; }
+  .btn-outline-secondary:hover, .btn-outline-secondary:focus {
+    background-color: #757575;
+    color: #FFFFFF; }
+
+/* ALTERTS */
+.alert-success {
+  background-color: rgba(58, 185, 33, 0.33);
+  border-color: rgba(58, 185, 33, 0.33);
+  color: #0ba523; }
+
+.alert-info {
+  background-color: rgba(45, 178, 237, 0.33);
+  border-color: rgba(45, 178, 237, 0.33);
+  color: #138dc3; }
+
+.alert-warning {
+  background-color: rgba(242, 133, 7, 0.33);
+  border-color: rgba(242, 133, 7, 0.33);
+  color: #c66e08; }
+
+.alert-danger {
+  background-color: rgba(234, 73, 22, 0.33);
+  border-color: rgba(234, 73, 22, 0.33);
+  color: #c1390e; }
+
+/* BADGES */
+.badge-default {
+  background-color: #323232; }
+
+.badge-primary {
+  background-color: #039BE5; }
+
+.badge-success {
+  background-color: #3ab921; }
+
+.badge-info {
+  background-color: #2db2ed; }
+
+.badge-warning {
+  background-color: #f28507; }
+
+.badge-danger {
+  background-color: #ea4916; }
+
+/* TEXT */
+.text-muted {
+  color: #757575 !important; }
+
+.text-primary {
+  color: #039BE5 !important; }
+
+.text-success {
+  color: #3ab921 !important; }
+
+.text-info {
+  color: #2db2ed !important; }
+
+.text-warning {
+  color: #f28507 !important; }
+
+.text-danger {
+  color: #ea4916 !important; }
+
+/* PROGRESS BAR */
+.progress-bar {
+  background-color: #039BE5; }
+
 /* Navbar */
-/* line 44, C:/laragon/www/M4Admin/css/style.sass */
 .navbar {
   z-index: 2; }
 
-/* line 47, C:/laragon/www/M4Admin/css/style.sass */
 .nav-top .navbar-nav .nav-link {
   color: #FFFFFF; }
-  /* line 49, C:/laragon/www/M4Admin/css/style.sass */
   .nav-top .navbar-nav .nav-link:hover {
     color: #323232; }
 
 /* Sidebar */
-/* line 54, C:/laragon/www/M4Admin/css/style.sass */
 #sidebar {
   background-color: #323232;
   width: 250px;
@@ -46,17 +183,14 @@ html, body {
   position: fixed;
   z-index: 1;
   display: block; }
-  /* line 65, C:/laragon/www/M4Admin/css/style.sass */
   #sidebar nav > .nav-link {
     width: 250px;
     display: inline-block;
     color: #fff; }
-    /* line 70, C:/laragon/www/M4Admin/css/style.sass */
     #sidebar nav > .nav-link:hover {
       color: #039BE5; }
 
 /* Content Area */
-/* line 74, C:/laragon/www/M4Admin/css/style.sass */
 #content {
   padding-left: 250px;
   min-height: 100%;
@@ -64,17 +198,14 @@ html, body {
   padding-top: 56px;
   background-color: #dadada; }
 
-/* line 81, C:/laragon/www/M4Admin/css/style.sass */
 .full-width {
   padding-left: 0 !important;
   transition: all 1s ease; }
 
-/* line 85, C:/laragon/www/M4Admin/css/style.sass */
 #nav-toggle {
   transition: all 1s ease;
   margin: 10px;
   position: fixed; }
-  /* line 89, C:/laragon/www/M4Admin/css/style.sass */
   #nav-toggle.active {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -83,27 +214,22 @@ html, body {
     transform: rotate(90deg);
     transition: all 1s ease; }
 
-/* line 93, C:/laragon/www/M4Admin/css/style.sass */
 .breadcrumb {
   padding-left: 60px;
   background-color: #f7f7f9; }
 
 /* Dashboard Statistics */
-/* line 98, C:/laragon/www/M4Admin/css/style.sass */
 #dashboard-statistics {
   color: #323232; }
-  /* line 100, C:/laragon/www/M4Admin/css/style.sass */
   #dashboard-statistics .value {
     color: #757575; }
 
 /* Chat Area */
-/* line 104, C:/laragon/www/M4Admin/css/style.sass */
 #live-chat-body {
   height: 400px;
   overflow-x: hidden; }
 
 /* Task List */
-/* line 111, C:/laragon/www/M4Admin/css/style.sass */
 .trumbowyg-box, .trumbowyg-editor {
   margin: 0; }
 

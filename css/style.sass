@@ -1,4 +1,4 @@
-@import "bourbon/bourbon"; 
+@import "bourbon/bourbon"
 
 $width-sidebar: 250px
 
@@ -7,9 +7,18 @@ $color-primary-dark: #1186c9
 $color-primary-light: #B3E5FC
 $color-accent: #FFEB3B
 
-$color-sucess: #00c853
-$color-warning: #ffff00
-$color-error: #ff3d00
+$color-success: #3ab921
+$color-success-secondary: #0ba523
+$color-success-light: rgba(58, 185, 33, 0.33)
+$color-warning: #f28507
+$color-warning-secondary: #c66e08
+$color-warning-light: rgba(242, 133, 7, 0.33)
+$color-danger: #ea4916
+$color-danger-secondary: #c1390e
+$color-danger-light: rgba(234, 73, 22, 0.33)
+$color-info: #2db2ed
+$color-info-secondary: #138dc3
+$color-info-light: rgba(45, 178, 237, 0.33)
 
 $color-bg: #dadada
 $color-bg-primary: #fff
@@ -28,17 +37,178 @@ html, body
     margin-bottom: 25px
     
 .bg-primary
-    background-color: $color-primary !important;
+    background-color: $color-primary !important
+    
+.bg-success
+    background-color: $color-success !important
+
+.bg-info
+    background-color: $color-info !important
+    
+.bg-warning
+    background-color: $color-warning !important
+    
+.bg-danger
+    background-color: $color-danger !important
     
 /* BUTTONS */
 .btn-primary
     background-color: $color-primary
+    border-color: $color-primary-dark
+    &:hover,
+    &:focus
+        background-color: $color-primary-dark
+        border-color: $color-primary-dark
+    
+.btn-outline-primary
     border-color: $color-primary
     &:hover,
     &:focus
         background-color: $color-primary-dark
-        border-color: $color-primary-dark        
+        border-color: $color-primary-dark
     
+.btn-success
+    background-color: $color-success
+    border-color: $color-success-secondary
+    &:hover,
+    &:focus
+        background-color: $color-success-secondary
+        border-color: $color-success
+    
+.btn-outline-success
+    border-color: $color-success
+    &:hover,
+    &:focus
+        background-color: $color-success
+        border-color: $color-success
+    
+.btn-warning
+    background-color: $color-warning
+    border-color: $color-warning-secondary
+    &:hover,
+    &:focus
+        background-color: $color-warning-secondary
+        border-color: $color-warning
+	
+.btn-outline-warning
+    border-color: $color-warning
+    &:hover,
+    &:focus
+        background-color: $color-warning
+        border-color: $color-warning
+    
+.btn-danger
+    background-color: $color-danger
+    border-color: $color-danger-secondary
+    &:hover,
+    &:focus
+        background-color: $color-danger-secondary
+        border-color: $color-danger
+	
+.btn-outline-danger
+    border-color: $color-danger-secondary
+    &:hover,
+    &:focus
+        background-color: $color-danger
+        border-color: $color-danger
+    
+.btn-info
+    background-color: $color-info
+    &:hover, 
+    &:focus
+        background-color: $color-info-secondary
+        border-color: $color-info
+	
+.btn-outline-info
+    border-color: $color-info-secondary
+    &:hover,
+    &:focus
+        background-color: $color-info
+        border-color: $color-info
+
+.btn-link
+    
+.btn-secondary
+    background-color: $color-text-secondary
+    color: $color-text-reverse
+    &:hover,
+    &:focus
+        background-color: $color-text-primary
+        color: $color-text-reverse
+    
+.btn-outline-secondary
+    border-color: $color-text-secondary
+    color: $color-text-secondary
+    &:hover,
+    &:focus
+        background-color: $color-text-secondary
+        color: $color-text-reverse
+    
+    
+/* ALTERTS */
+.alert-success
+    background-color: $color-success-light
+    border-color: $color-success-light
+    color:  $color-success-secondary
+    
+.alert-info
+    background-color: $color-info-light
+    border-color: $color-info-light
+    color:  $color-info-secondary
+    
+.alert-warning
+    background-color: $color-warning-light
+    border-color: $color-warning-light
+    color:  $color-warning-secondary
+    
+.alert-danger
+    background-color: $color-danger-light
+    border-color: $color-danger-light
+    color:  $color-danger-secondary
+
+/* BADGES */
+.badge-default
+    background-color: $color-text-primary
+
+.badge-primary
+    background-color: $color-primary
+    
+.badge-success
+    background-color: $color-success
+    
+.badge-info
+    background-color: $color-info
+    
+.badge-warning
+    background-color: $color-warning
+    
+.badge-danger
+    background-color: $color-danger
+    
+/* TEXT */
+.text-muted
+    color: $color-text-secondary !important
+    
+.text-primary
+    color: $color-primary !important
+    
+.text-success
+    color: $color-success !important
+    
+.text-info
+    color: $color-info !important
+    
+.text-warning
+    color: $color-warning !important
+    
+.text-danger
+    color: $color-danger !important
+    
+    
+    
+/* PROGRESS BAR */
+.progress-bar
+    background-color: $color-primary
     
 /* Navbar */
 .navbar,
@@ -47,7 +217,7 @@ html, body
 .nav-top .navbar-nav .nav-link
     color: $color-text-reverse
     &:hover
-       color: $color-text-primary
+        color: $color-text-primary
     
      
 /* Sidebar */
@@ -79,7 +249,7 @@ html, body
     background-color: $color-bg
 
 .full-width
-    padding-left: 0 !important;
+    padding-left: 0 !important
     transition: all 1s ease
         
 #nav-toggle
@@ -103,10 +273,10 @@ html, body
 /* Chat Area */
 #live-chat-body
     height: 400px
-    overflow-x: hidden; 
+    overflow-x: hidden
     
 /* Task List */
-
+ 
 
 .trumbowyg-box, .trumbowyg-editor
     margin: 0
