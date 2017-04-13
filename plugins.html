@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="bower_components/trumbowyg/dist/ui/trumbowyg.min.css">
+    <link rel="stylesheet" href="bower_components/toastr/toastr.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -70,52 +71,37 @@
     <div id="content">
         <i class="fa fa-bars fa-2x" id="nav-toggle" aria-hidden="true"></i>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item active">Additional Pages</li>
+            <li class="breadcrumb-item active">Plugins </li>
         </ol>
 
         <div class="container">
 
-            <!-- additional pages -->
+            <!-- Buttons -->
 
             <div class="row">
-
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            Login
-                        </div>
-                        <div class="card-block">
-                            <a href="login.html"><img class="img-fluid" src="img/login.png"></a>
-                        </div>
+              
+                                
+                <div class="card">
+                    <div class="card-header">Toastr - Toast Messages</div>
+                    <div class="card-block">
+                        <button class="btn btn-success" id="toastSuccess">Success</button>
+                        <button class="btn btn-warning" id="toastWarning">Warning</button>
+                        <button class="btn btn-danger" id="toastDanger">Danger</button>
                     </div>
+                    <div class="card-footer"><a href="https://github.com/CodeSeven/toastr" target="_blank" "btn btn-secondary">Website</a></div>
                 </div>
-
-
-
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            404
-                        </div>
-                        <div class="card-block">
-                            <a href="404.html"><img class="img-fluid" src="img/404.png"></a>
-                        </div>
+                   
+                <div class="card">
+                    <div class="card-header">Animate.css - Toast Messages</div>
+                    <div class="card-block">
+                        <button class="btn btn-success" id="toastSuccess">Success</button>
+                        <button class="btn btn-warning" id="toastWarning">Warning</button>
+                        <button class="btn btn-danger" id="toastDanger">Danger</button>
                     </div>
+                    <div class="card-footer"><a href="https://github.com/CodeSeven/toastr" target="_blank" "btn btn-secondary">Website</a></div>
                 </div>
                 
-                
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            Plugin Showcase
-                        </div>
-                        <div class="card-block">
-                            <a href="plugins.html"><img class="img-fluid" src="img/404.png"></a>
-                        </div>
-                    </div>
-                </div>
-                
-                
+                                
             </div>
 
         </div>
@@ -131,11 +117,21 @@
     <script src="bower_components/jquery.nicescroll/dist/jquery.nicescroll.min.js"></script>
     <script src="bower_components/Sortable/Sortable.min.js"></script>
     <script src="bower_components/trumbowyg/dist/trumbowyg.min.js"></script>
+    <script src="bower_components/toastr/toastr.min.js"></script>
 
     <script src="js/script.js"></script>
 
     <script>
-
+        toastr.options.positionClass = 'toast-bottom-right';
+        $("#toastSuccess").click(function() {
+            toastr.success('Life is good and this is green', 'Says Message Itself')
+        });
+        $("#toastWarning").click(function() {
+            toastr.warning('Be careful orange says!', 'Attention please')
+        });
+        $("#toastDanger").click(function() {
+            toastr.error('This situation should not have happened', 'ERROR')
+        });
 
     </script>
 </body>

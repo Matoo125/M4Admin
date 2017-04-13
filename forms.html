@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="bower_components/trumbowyg/dist/ui/trumbowyg.min.css">
+    <link rel="stylesheet" href="bower_components/jquery.tagsinput/dist/jquery.tagsinput.min.css">
+
+    
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -92,6 +96,11 @@
                                         <label for="description">Description</label>
                                         <textarea class="form-control" name="description" id="description"></textarea>
                                     </div>
+                                    
+                                  <div class="form-group">
+                                        <label for="inputTitle">Tags</label>
+                                        <input type="text" data-role="tagsinput" class="form-control" id="tags" placeholder="Add tag">
+                                    </div>
 
                                     <div class="form-group">
                                         <label for="textareaArticleBody">Content</label>
@@ -140,6 +149,7 @@
     <script src="bower_components/jquery.nicescroll/dist/jquery.nicescroll.min.js"></script>
     <script src="bower_components/Sortable/Sortable.min.js"></script>
     <script src="bower_components/trumbowyg/dist/trumbowyg.min.js"></script>
+    <script src="bower_components/jquery.tagsinput/src/jquery.tagsinput.js"></script>
 
     <script src="js/script.js"></script>
     
@@ -147,7 +157,13 @@
     $('#textareaArticleBody').trumbowyg({
     autogrow: true
 });
-        
+
+$('#tags').tagsInput({
+       'height':'auto',
+        'width':'auto',
+});
+
+
         
     </script>
 </body>
