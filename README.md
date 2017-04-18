@@ -10,3 +10,8 @@
 - jQuery Tags Input (tag input)
 - Toastr (small flash messages)
 - Cropperjs (Image Cropper)
+
+## TODO
+- Hamburger button is overflown in medium screen size
+- action button and hamburger always on top
+- action button css not works in different screens
